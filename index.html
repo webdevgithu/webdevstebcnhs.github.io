@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>What is STE?</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">BCNHS STE</a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="https://tinypic.host/images/2022/06/10/stars.png" id="stars">
+            <img src="https://tinypic.host/images/2022/06/10/moon.png" id="moon">
+            <img src="https://tinypic.host/images/2022/06/10/mountains_behind.png" id="mountains_behind">
+            <h2 id="text">STE Program</h2>
+            <a href="#sec" id="btn">Explore</a>
+            <img src="https://tinypic.host/images/2022/06/10/mountains_front.png" id="mountains_front">
+        </section>
+        <div class="sec" id="sec">
+            <h2><b>WHAT IS</b> SCIENCE, TECHNOLOGY & ENGINEERING PROGRAM?</b></h2>
+            <p>Formerly the Engineering and Science Education Program (ESEP) is the flagship program for the development of Science, Mathematics and Research in Special Science Classes (SSC). The Science Curriculum Framework articulates standards, core competencies, approaches and underlying principles in Science for secondary schools in the country.<br><br>
+                The framework is constructed around the development of a functionally literate Filipino who demonstrates understanding of basic Science concepts and processes in an integrative way to solve problems critically, think innovatively and make informed decisions in order to protect the environment conserve resources and sustain quality life.<br><br><br></p>
+            <h3>SCIENCE, TECHNOLOGY AND ENGINEERING (STE) PROGRAM formerly the Engineering and Science Education Program (ESEP)</h3>
+            <p>The Science, Technology and Engineering (STE) Program is the flagship program for the development of Science, Mathematics, Engineering and Research in Special Science Classes (SSC). The Science Curriculum Framework articulates standards, core competencies, approaches and underlying principles in Science for secondary schools in the country.<br><br>
+                The framework is constructed around the development of a functionally literate Filipino who demonstrates understanding of basic Science concepts and processes in an integrative way to solve problems critically, think inventively and make informed decisions in order to protect the environment conserve resources and sustain quality life.<br><br><br></p>
+            <h4>Overview</h4>
+            <p>The Department of Education commits itself in the development of the full potential of students in all areas.  Various programs and projects have been implemented to realize its goal. One of its thrusts is to produce quality learners in the field of Science and Technology. In this regard, Special Curricular Program in Science, Technology and Engineering (STE) has been offered which envisions highly responsible, morally upright, globally competitive, and work-ready learners. This program aims to widen access to quality secondary education with the vision to develop learners with the interest and aptitude for careers in or for higher learning in Science, Technology and Engineering.<br><br><br></p>
+            <h5>Curriculum</h5>
+            <ol>
+                <li>The Special Program in Science, Technology and Engineering (STE) offers a four year curriculum based on the K to 12 secondary education program, with a specialization in Science. (Grade 7 - Environmental Science, Grade 8 - Biotechnology, Grade 9 - Consumer Chemistry, Grade 10 - Electronics and Robotics)<br><br></li>
+                <li>The core subjects shall follow the Learning Competencies in the K to 12 Curriculum. TLE subject shall be replaced with Research subject. However, Computer Education in Research class will be integrated.<br><br></li>
+                <li>The subject offerings, time allotment shall be strictly implemented.<br><br></li>
+                <li>The curricular of Science and Mathematics are enriched. Course descriptions of additional subjects are provided herein.<br><br></li>
+            </ol><br><br><br>
+            <h6>Admission (per RM 154 s. 2021)</h6>
+            <p>To qualify in the ranking, interested learners must have met/ possessed the following criteria, to with:<br><br></p>
+            <ol>
+                <li>quarterly grade of 85% or higher in English, Science and Mathematics and a grade of 83% or higher in the other subjects as evidenced by the grades of students up to third rating period of SY 2020 - 2021;<br><br></li>
+                <li>good moral character; and<br><br></li>
+                <li>preferably in good health and fit to undergo a rigorous academic program.<br><br></li>
+            </ol>
+        </div>
+
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('mountains_front');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 3.5 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                header.style.top = value * 0.5 + 'px';
+            })
+        </script>
+    </body>
+</html>
